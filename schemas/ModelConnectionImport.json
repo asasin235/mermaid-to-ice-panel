@@ -1,0 +1,14 @@
+{
+  "$id": "https://api.icepanel.io/v1/schemas/ModelConnectionImport",
+  "type": "object",
+  "required": ["id", "name", "direction", "originId", "targetId"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "direction": { "$ref": "https://api.icepanel.io/v1/schemas/ModelConnectionDirection" },
+    "originId": { "type": "string" },
+    "targetId": { "type": "string" },
+    "description": { "type": "string" }
+  },
+  "additionalProperties": false
+}

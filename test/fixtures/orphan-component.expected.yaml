@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://api.icepanel.io/v1/schemas/LandscapeImportData
+namespace: mermaid-import
+modelObjects:
+  - id: 1bcc0c870cfd1426
+    name: Default Domain
+    type: domain
+  - id: a4c3374adf7cb84c
+    name: Orphan
+    type: component
+    description: Orphaned
+    caption: TS
+modelConnections: []

@@ -1,0 +1,11 @@
+{
+  "$id": "https://api.icepanel.io/v1/schemas/LandscapeImportData",
+  "type": "object",
+  "required": ["namespace", "modelObjects", "modelConnections"],
+  "properties": {
+    "namespace": { "type": "string" },
+    "modelObjects": { "type": "array", "items": { "$ref": "https://api.icepanel.io/v1/schemas/ModelObjectImport" } },
+    "modelConnections": { "type": "array", "items": { "$ref": "https://api.icepanel.io/v1/schemas/ModelConnectionImport" } }
+  },
+  "additionalProperties": false
+}

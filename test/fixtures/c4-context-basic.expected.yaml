@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://api.icepanel.io/v1/schemas/LandscapeImportData
+namespace: mermaid-import
+modelObjects:
+  - id: 1bcc0c870cfd1426
+    name: Acme
+    type: domain
+  - id: 0a001b9a896cb8ad
+    name: User
+    type: actor
+    parentId: 1bcc0c870cfd1426
+    caption: A user
+    external: false
+  - id: aa8fd2cd134bfe4c
+    name: Banking
+    type: system
+    parentId: 1bcc0c870cfd1426
+    caption: Core
+    external: false
+modelConnections:
+  - id: 59d7d5435f7151f4
+    name: Uses
+    direction: outgoing
+    originId: 0a001b9a896cb8ad
+    targetId: aa8fd2cd134bfe4c
+    description: HTTPS

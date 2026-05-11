@@ -1,0 +1,36 @@
+{
+  "name": "mermaid-to-icepanel",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "mermaid-to-icepanel": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run && npm run typecheck",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "schemas:refresh": "tsx scripts/refresh-schemas.ts"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "commander": "^12.1.0",
+    "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "@typescript-eslint/eslint-plugin": "^8.33.1",
+    "@typescript-eslint/parser": "^8.33.1",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "execa": "^9.5.2",
+    "json-schema-to-typescript": "^15.0.4",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.59.2",
+    "vitest": "^2.1.8"
+  }
+}

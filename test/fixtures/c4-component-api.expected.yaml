@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://api.icepanel.io/v1/schemas/LandscapeImportData
+namespace: mermaid-import
+modelObjects:
+  - id: 1bcc0c870cfd1426
+    name: Default Domain
+    type: domain
+  - id: 4345954b20ed0262
+    name: App
+    type: app
+    description: Main
+    caption: Node
+  - id: f979907fffd605b5
+    name: Controller
+    type: component
+    description: Handles
+    caption: TS
+modelConnections:
+  - id: 55071b8b0b426129
+    name: uses
+    direction: outgoing
+    originId: f979907fffd605b5
+    targetId: 4345954b20ed0262

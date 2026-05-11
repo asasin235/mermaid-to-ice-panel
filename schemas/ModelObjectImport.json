@@ -1,0 +1,16 @@
+{
+  "$id": "https://api.icepanel.io/v1/schemas/ModelObjectImport",
+  "type": "object",
+  "required": ["id", "name", "type"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "type": { "$ref": "https://api.icepanel.io/v1/schemas/ImportModelObjectType" },
+    "parentId": { "type": "string" },
+    "description": { "type": "string" },
+    "caption": { "type": "string" },
+    "external": { "type": "boolean" },
+    "status": { "type": "string" }
+  },
+  "additionalProperties": false
+}
