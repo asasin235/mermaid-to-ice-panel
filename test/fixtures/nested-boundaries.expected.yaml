@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://api.icepanel.io/v1/schemas/LandscapeImportData
+namespace: mermaid-import
+modelObjects:
+  - id: 44abd1e9940f8896
+    name: Acme
+    type: domain
+  - id: 44d14c949e2e58b4
+    name: Payments
+    type: system
+    parentId: 44abd1e9940f8896
+    external: false
+modelConnections: []

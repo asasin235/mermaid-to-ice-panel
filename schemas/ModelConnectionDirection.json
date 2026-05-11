@@ -1,0 +1,5 @@
+{
+  "$id": "https://api.icepanel.io/v1/schemas/ModelConnectionDirection",
+  "type": "string",
+  "enum": ["outgoing", "incoming", "bidirectional"]
+}
